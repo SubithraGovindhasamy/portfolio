@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#sub-main{
+    max-width:100%;
+    height:600px; 
+    background:linear-gradient(180deg,rgb(122, 112, 167),rgb(164, 149, 223),rgb(245, 243, 243));
+}
+
+#header{
+    max-width:100%;
+    height:auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:15px 10px; 
+    box-shadow: 1px 1px 15px rgba(0,0,0,.5);  
+
+}
+
+#name{
+    color:aliceblue;
+    padding:15px;
+    padding-left: 35px;
+}
+#nav-link i{
+    display:none;
+}
+#nav-link a{
+     text-decoration: none;
+     padding:15px;
+      color:white;
+     font-size: 18px;
+}
+#nav-link a:hover{
+    color:black;
+}
+
+.side-navbar{
+    width:50%;
+    padding: 25px 45px;
+    display:flex;
+    align-items: center;
+    position: fixed;
+    top:0;
+    left:-100%;
+    background-color:rgb(84, 11, 158);
+    flex-direction: column;
+    border-radius: 10px;
+    transition: all 0.5s;
+    z-index:1000;
+}
+#close-navbar p{
+    font-size:25px;
+    color:rgb(250, 8, 8);
+    
+}
+.side-navlink{
+    float:left;
+}
+.side-navlink a{
+    text-decoration: none;
+    color:white;
+}
+@media(max-width:800px){
+    #nav-link i{
+        display:block;
+    }
+    #nav-link a{
+        display:none;
+    }
+    .side-navbar{
+        width:50%;
+    }
+    .side-navlink a{
+        display:block;
+        padding: 10px;
+        text-align: center;
+    }
+    #close-navbar{
+        margin-top: 10px;
+        text-align: center;
+    }
+}
+#content{
+    width:100%;
+    height:500px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#content h1{
+    font-size: 45px;
+    color:black;
+} 
+#content h2{
+    font-size: 55px;
+}
+#content h3{
+    font-size: 22px;
+}
+#btn{
+    width:200px;
+    border:none;
+    color:aliceblue;
+    text-align: center;
+    border-radius: 30px 30px;
+    padding:10px;
+    background-color: rgb(105, 90, 166);
+}
+#contact a{
+   color:rgb(0, 0, 0);
+   text-decoration: none;
+}
+h5{
+    color:rgb(150, 148, 148);
+    text-align: center;
+    padding-bottom:25px;
+}
+h2{
+    text-align: center;
+    padding-bottom: 10px; 
+    color: rgb(84,11,156);
+}
+.icon{
+    font-size: 30px;
+    padding:30px;
+}
